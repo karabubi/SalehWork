@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Order Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="home-link"><a href="#">Home</a></li>
+        <li class="title"><h1>Order Your Ice Cream</h1></li>
+      </ul>
+    </nav>
+
+    <section id="order-form-section">
+      <form
+        action="https://tmzhf4wztf.execute-api.eu-central-1.amazonaws.com/prod/formecho"
+      >
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="variant">Choose a Flavor:</label>
+          <select id="variant" name="variant" required>
+            <option value="stracciatella">Stracciatella</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="strawberry">Strawberry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Type:</label>
+          <input type="radio" id="cup" name="type" value="cup" checked />
+          <label for="cup">Cup</label>
+          <input type="radio" id="cone" name="type" value="cone" />
+          <label for="cone">Cone</label>
+        </div>
+
+        <div class="form-group">
+          <label for="expressDelivery">Express Delivery:</label>
+          <input
+            type="checkbox"
+            id="expressDelivery"
+            name="expressDelivery"
+            value="true"
+          />
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit Order</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Ice Cream Shop.</p>
+    </footer>
+  </body>
+</html>
