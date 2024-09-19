@@ -1,0 +1,70 @@
+/* General styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky Navbar */
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Styling for sections */
+section {
+  padding: 100px;
+  text-align: center;
+}
+
+#home {
+  background-color: lightblue;
+}
+
+#about {
+  background-color: lightgreen;
+}
+
+#portfolio {
+  background-color: lightcoral;
+}
+
+#contact {
+  background-color: lightgoldenrodyellow;
+}
+
+/* Styling for images in sections */
+.section-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}

@@ -1,0 +1,20 @@
+/* Styling for the image container */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the profile image */
+.profile-pic {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Style for the emoji overlay */
+.emoji {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+}
