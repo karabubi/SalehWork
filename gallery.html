@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Photo Gallery</h1>
+      <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="architecture">Architecture</button>
+      </div>
+    </header>
+
+    <main class="gallery">
+      <div class="photo" data-category="nature">
+        <img src="nature1.jpg" alt="Nature 1" />
+      </div>
+      <div class="photo" data-category="architecture">
+        <img src="architecture1.jpg" alt="Architecture 1" />
+      </div>
+      <!-- Add more photos as needed -->
+    </main>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" />
+    </div>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
